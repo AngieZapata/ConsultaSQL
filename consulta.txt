@@ -1,0 +1,11 @@
+SELECT fechainicio, fechaFin FROM Reporte
+WHERE id_ordenTrabajo == OT-234
+
+SELECT count (reporte) 
+FROM reporte INNER JOIN UsuarioReporte ON id_reporte==id INNER JOIN Usuario ON id_usuario==id WHERE nombreUsuario == Luis Ramírez
+
+SELECT nombreActividad
+FROM Actividad INNER JOIN ReporteActividad ON id==id_Actividad INNER JOIN Reporte id_reporte=id WHERE MAX(fechaFin-fechainicio)
+
+SELECT count (reporte) 
+FROM reporte INNER JOIN UsuarioReporte ON id_reporte==id INNER JOIN Usuario ON id_usuario==id
